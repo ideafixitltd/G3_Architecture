@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Work Sans", sans-serif;
+}
+/*----google font----*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*----reused componant start----*/
+.container{
+    width:1180px;
+    margin: auto;
+}
+/*----header section start----*/
+header{
+    background:#ff8f0e30;
+    padding:20px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo{
+    font-size:40px;
+    color:#131313;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap:30px;
+}
+ul li a{
+    text-decoration:none;
+    color:#424242;
+    font-size:20px;
+}
+/*----banner section start----*/
+.banner{
+    background:#ff8f0e30;
+}
+.banner_info{
+    width:865px;
+    margin:auto;
+}
+.banner_titile{
+    text-align:center;
+    font-size:64px;
+    font-weight:900;
+    padding: 30px 0;
+    line-height:5rem;
+}
+.banner_description{
+    font-size:16px;
+    text-align: center;
+    color:#727272;
+    margin-bottom:30px;
+}
+.btn_primary{
+    font-size:1.2rem;
+    font-weight:600;
+    display:block;
+    margin:auto;
+    padding:20px 20px;
+    background:#FF900E;
+    color:#fff;
+    border-radius:5px;
+    border:0;
+    margin-bottom:30px;
+}
+.banner_img{
+    max-width:100%;
+}
+
+/*----responsive style start----*/
+/*----mobile device start----*/
+@media screen and (max-width:575px) {
+    .container {
+        width: 100%;
+    }
+    .btn_primary{
+        font-size:1rem;
+        padding:15px 15px;
+    }
+/*----header style start----*/
+    nav{
+        display: flex;
+        flex-direction:column;
+    }
+    .logo{
+        margin-bottom:15px;
+        font-size:30px;
+    }
+    ul li a {
+        font-size: 18px;
+    }
+/*----banner style start----*/
+.banner{
+    padding:20px 0;
+}
+.banner_info {
+width: 90%;
+margin: auto;
+}
+.banner_titile{
+font-size:40px;
+line-height:3rem;
+padding:0 0 20px 0;
+}
+.banner_img {
+max-width: 90%;
+margin: auto;
+display: block;
+}
+}
+/*----medium device start----*/
+@media screen and (min-width:576px) and (max-width:980px){
+    .container {
+        width: 100%;
+    }
+    .btn_primary{
+        font-size:1rem;
+        padding:15px 15px;
+    }
+/*----header style start----*/
+    .logo{
+        font-size:1.5rem;
+    }
+    ul li a {
+        font-size: 1.1rem;
+    }
+/*----banner style start----*/
+    .banner{
+        padding:20px 0;
+    }
+    .banner_info {
+        width: 90%;
+        margin: auto;
+    }
+    .banner_titile{
+        font-size:40px;
+        line-height:3rem;
+        padding:0 0 20px 0;
+    }
+    .banner_img {
+        max-width: 90%;
+        margin: auto;
+        display: block;
+    }
+}
