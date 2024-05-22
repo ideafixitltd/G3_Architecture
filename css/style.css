@@ -98,7 +98,65 @@ ul li a{
     font-size:1rem;
     margin:2rem 0;
 }
-
+/*----features section starts*/
+.featuresContainer{
+  display:flex;
+  gap:3rem;
+  align-items: center;
+  overflow: hidden;
+}
+.featuresContent {
+  max-width: 50%;
+}
+.featuresDisc{
+  color:#727272;
+  font-size:1rem;
+  margin-bottom:2rem;
+}
+.featuresTitle{
+  font-size:2.8rem;
+  padding-left:1.5rem;
+  color:#131313;
+  border-left:5px solid #FF900E;
+  margin-bottom:1.5rem;
+}
+.featuresCard {
+  padding: 0.9rem;
+  margin-bottom: 1.3rem;
+  box-shadow: 2px 2px 2px 1px #33333329;
+}
+.featuresCardTitle{
+  font-size:1.3rem;
+  margin-bottom:0.9rem;
+  color: #131313;
+  font-weight:600;
+}
+.featuresCardDisc{
+  font-size:1rem;
+  color:#727272;
+}
+.featuresImg img {
+  max-width: 83%;
+  margin-left: 5.5rem;
+  overflow: hidden !important;
+}
+.featuresBadge{
+  padding:2.8rem;
+  background:#FF900E;
+  color:#fff;
+  text-align:center;
+  border-radius:5px;
+  width:21rem;
+  position:relative;
+  bottom:7rem;
+}
+.featuresBadge h2{
+  font-size:4rem;
+  font-weight:700;
+}
+.featuresBadge p{
+  font-size:1rem;
+}
 /*----facts section start----*/
 .factsTitle{
     color:#131313;
@@ -164,7 +222,7 @@ ul li a{
   }
   .sponsorLogo:hover{
     filter:grayscale(0%);
-    transition-duration:5ms;
+    transition-duration:0.5s;
     
   }
   /*----footer section start----*/
@@ -175,6 +233,14 @@ ul li a{
     font-size:1.2rem;
     text-align:center;
     color:#424242;
+  }
+  .coderssayed{
+    text-decoration: none;
+    color:#424242;
+  }
+  .coderssayed:hover{
+    color:#FF900E;
+    transition-duration:0.5s;
   }
 /*----responsive style start----*/
 /*----mobile device start----*/
@@ -236,6 +302,28 @@ display: block;
   }
   .team_discription {
     text-align: center;
+  }
+  /*----features section start----*/
+  .featuresContainer{
+    flex-direction: column;
+  }
+  .featuresContent{
+    max-width:100%;
+  }
+  .featuresTitle {
+    font-size: 2rem;
+  }
+  .featuresImg img {
+    max-width:90%;
+    margin-left: 5.5rem;
+    overflow: hidden !important;
+  }
+  .featuresBadge{
+    bottom:3.5rem;
+    width:40%;
+  }
+  .featuresBadge h2 {
+    font-size: 2rem;
   }
   /*----facts section start----*/
   .factsTitle{
@@ -323,6 +411,29 @@ display: block;
       }
       .team_heading {
         font-size: 2.1rem;
+      }
+      /*----features section start----*/
+      .featuresContainer{
+        flex-direction: column;
+      }
+      .featuresContent{
+        max-width:100%;
+      }
+      .featuresTitle{
+        font-size:  2.1rem;
+      }
+      .featuresImg img {
+        max-width:90%;
+        margin-left: 5.5rem;
+        overflow: hidden !important;
+      }
+      .featuresBadge{
+        max-width:40%;
+        bottom:4rem;
+      }
+      .featuresBadge h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
       }
       /*----facts section start----*/
       .factsTitle{
